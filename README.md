@@ -4,8 +4,8 @@ Cosas que debes tener en cuenta desde ya **HEAD** es tu presente.
 
 ### Creación de repositorio gratis en la web **[github.com](https:/github.com "click ")** 
 
-Ingresando al Link podrás crearte una cuenta de manera gratuita para usarla debes confirmar tu correo como en cualquier típica página.
-Al momento de crear un repositorio nuevo tenemos que tener presentes dos cosas que son gran importancia que debemos utilizarlas nuestra consola y trabajar de manera remota con git.
+Ingresando al Link podrás crearte una cuenta de manera gratuita, para usarla debes confirmar tu correo como en cualquier típica página.
+Al momento de crear un repositorio nuevo tenemos que tener presentes dos cosas que son de gran importancia y que debemos utilizar en nuestra consola al momento de querer trabajar de manera remota con git.
 
 Lo Primero es crear un repositorio y **NO** marcar la opción de `agregar el README.md` (este lo creamos nosotros para hacer la presentación del contenido).
 
