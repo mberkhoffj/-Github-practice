@@ -34,7 +34,11 @@ git config --list
 
 En git tenemos un ciclo de trabajo, no detallaré mucho en esto, lo que deben saber es que para que git este al tanto del archivo que estan trabajando tienen que agregarlo al area de preparación con `git add nombre-del-archivo` (más adelante ahondaremos en las diferentes maneras de trabajar esta linea de comandos)
 
-Una vez en el area de preparación podrán realizar el commit con su mensaje respectivo del hito que marcará un presedente en su historial de git, el comando es: `git commit -m "esta commit lleva mi index.html, mi style.css y mi javascript.js` les dejo la secuencia de comandos a continuación:
+Una vez en el area de preparación podrán realizar el commit con su mensaje respectivo del hito que marcará un presedente en su historial de git, el comando es: `git commit -m "esta commit lleva mi index.html, mi style.css y mi javascript.js`.
+
+Tienen que comprender que cada commit que realicen llevará una referencia de qué contenido es el que se esta trabajando.
+
+A continuación les dejo una secuencia de líneas de código para que ejecuten ustedes mismos:
 
 ```
 git status
