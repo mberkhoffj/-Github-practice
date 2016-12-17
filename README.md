@@ -32,7 +32,7 @@ git config --list
 ```
 ### De la zona de trabajo al area de preparación
 
-En Git tenemos un ciclo de trabajo (no detallaré mucho en esto). Lo que deben saber de Git debe estar al tanto de qué archivo estamos trabajando, tienen que agregarlo al area de preparación con: `git add nombre-del-archivo` (más adelante ahondaremos en las diferentes maneras de trabajar esta linea de comandos)
+En Git tenemos un ciclo de trabajo (no detallaré mucho en esto). Lo primero es que Git debe estar al tanto de qué archivo estamos trabajando, tienen que agregarlo al area de preparación con: `git add nombre-del-archivo` (más adelante ahondaremos en las diferentes maneras de trabajar esta linea de comandos)
 
 Una vez en el area de preparación podrán realizar el *commit* con su mensaje ` -m ` respectivo del hito que marcará un presedente en su historial de git.
 Por ejemplo: `git commit -m "esta commit lleva mi index.html, mi style.css y mi javascript.js`.
