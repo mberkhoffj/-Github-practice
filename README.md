@@ -2,9 +2,29 @@
 
 Cosas que debes tener en cuenta desde ya **HEAD** es tu presente.
 
-### Configurando GIT por primera vez
+### Creación de repositorio gratis en la web [github.com](https:/github.com "click ") 
+
+Ingresando al Link podrás crearte una cuenta de manera gratuita para usarla debes confirmar tu correo como en cualquier típica página.
+Al momento de crear un repositorio nuevo tenemos que tener dos cosas presentes que son de gran importancia para utilizarlas luego en nuestra consola y trabajar de manera remota con git.
+
+La Primera es que al crear un repositorio y **NO** marcar la opción de agregar el README.md, este lo creamos nosotros para hacer la presentación del contenido.
+
+La segunda es ejecutar a continuación de la configuración de git por consola las siguiente lineas de comandos:
 
 ```
+	git remote add origin https://github.com/xxxxxxx/-xxxxxxx.git
+	git push -u origin master
+```
+**Estas dos lineas de comando las ejecutaremos luego de haber realizado la configuración de git en su consola repito**
+
+### Configurando GIT por primera vez
+
+Si como yo estás en window te recomiendo instalar git bash una consola que reconoce los comandos de linux y te permitirá trabajar de manera cómoda con git. [descargar](https://git-scm.com/download/win "click ")
+
+Primer paso será configurar git en la consola utilizando los siguientes comandos:
+
+```
+git init
 git config --global user.name "nombre completo"
 git config --global user-email "correo-sin-comillas-dobles"
 git config --global core.editor subl
@@ -202,3 +222,6 @@ Para ver que ramos no han sido fusionadas y cuales si fusionamos, utilizamos los
 	git branch --no-merged
 	git branch --merged
 ```
+
+
+
