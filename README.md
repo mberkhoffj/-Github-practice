@@ -32,6 +32,10 @@ git config --list
 ```
 ### De la zona de trabajo al area de preparación
 
+En git tenemos un ciclo de trabajo, no detallaré mucho en esto, lo que deben saber es que para que git este al tanto del archivo que estan trabajando tienen que agregarlo al area de preparación con `git add nombre-del-archivo` (más adelante ahondaremos en las diferentes maneras de trabajar esta linea de comandos)
+
+Una vez en el area de preparación podrán realizar el commit con su mensaje respectivo del hilo que marcará un presedente en su historial de git, el comando es: `git commit -m "esta commit lleva mi index.html, mi style.css y mi javascript.js` les dejo la secuencia de comandos a continuación:
+
 ```
 git status
 git add "nombre-archivo"
@@ -40,6 +44,7 @@ git commit -m "nombre del commit"
 ```
 ### Ver diferencias entre los archivos en el area de preparación con el area de trabajo
 Utilizamos el siguiente comando
+
 ```
 	git diff
 ```
@@ -55,6 +60,9 @@ Podemos ver la diferencia entre dos **commit** especificos utilizando
 ```
 Esto nos mostrará en rojo lo eliminado y en verde lo agregado.
 Es importante tener conocimiento de los ID o HASH para ir comparando el trabajo realizado.
+
+Para ver los id o hash utilicen el comando `git log --decorate --oneline` ahondaremos más en este comando más adelante.
+
 
 ### Creando el .gitignore
 En este paso únicamente tienes que crear el archivo directamente desde sublime o su editor favorito el archivo **.gitignore** dentro del archivo escribe el nombre de su archivo a ignorar... por ejemplo:
