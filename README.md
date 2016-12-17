@@ -7,7 +7,7 @@ Cosas que debes tener en cuenta desde ya **HEAD** es tu presente.
 ```
 git config --global user.name "nombre completo"
 git config --global user-email "correo-sin-comillas-dobles"
-git --config core.editor subl
+git config --global core.editor subl
 git config --list
 ```
 ### De la zona de trabajo al area de preparación
