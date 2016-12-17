@@ -5,23 +5,23 @@ Cosas que debes tener en cuenta desde ya **HEAD** es tu presente.
 ### Creación de repositorio gratis en la web **[github.com](https:/github.com "click ")** 
 
 Ingresando al Link podrás crearte una cuenta de manera gratuita para usarla debes confirmar tu correo como en cualquier típica página.
-Al momento de crear un repositorio nuevo tenemos que tener dos cosas presentes que son de gran importancia para utilizarlas luego en nuestra consola y trabajar de manera remota con git.
+Al momento de crear un repositorio nuevo tenemos que tener presentes dos cosas que son gran importancia que debemos utilizarlas nuestra consola y trabajar de manera remota con git.
 
-La Primera es que al crear un repositorio y **NO** marcar la opción de agregar el README.md, este lo creamos nosotros para hacer la presentación del contenido.
+Lo Primero es crear un repositorio y **NO** marcar la opción de `agregar el README.md` (este lo creamos nosotros para hacer la presentación del contenido).
 
-La segunda es ejecutar a continuación de la configuración de git por consola las siguiente lineas de comandos:
+Lo segundo es ejecutar (continuación de la configuración de git por consola) las siguiente lineas de comandos:
 
 ```
 	git remote add origin https://github.com/xxxxxxx/-xxxxxxx.git
 	git push -u origin master
 ```
-**Estas dos lineas de comando las ejecutaremos luego de haber realizado la configuración de git en su consola repito**
+**Estas dos lineas de comando las ejecutaremos luego de haber realizado la configuración de git que viene a continuación**
 
 ### Configurando GIT por primera vez
 
-Si como yo estás en window te recomiendo instalar git bash una consola que reconoce los comandos de linux y te permitirá trabajar de manera cómoda con git. **[descargar](https://git-scm.com/download/win "click ")**
+Si como yo estás en window te recomiendo instalar git bash que es una consola que reconoce comandos de linux y te permite trabajar de manera cómoda git. **[descargar](https://git-scm.com/download/win "click ")**
 
-Primer paso será configurar git en la consola utilizando los siguientes comandos:
+El primer paso será configurar git en la consola `git bash` utilizando los siguientes comandos:
 
 ```
 git init
@@ -32,11 +32,12 @@ git config --list
 ```
 ### De la zona de trabajo al area de preparación
 
-En git tenemos un ciclo de trabajo, no detallaré mucho en esto, lo que deben saber es que para que git este al tanto del archivo que estan trabajando tienen que agregarlo al area de preparación con `git add nombre-del-archivo` (más adelante ahondaremos en las diferentes maneras de trabajar esta linea de comandos)
+En Git tenemos un ciclo de trabajo (no detallaré mucho en esto). Lo que deben saber de Git debe estar al tanto de qué archivo estamos trabajando, tienen que agregarlo al area de preparación con: `git add nombre-del-archivo` (más adelante ahondaremos en las diferentes maneras de trabajar esta linea de comandos)
 
-Una vez en el area de preparación podrán realizar el commit con su mensaje respectivo del hito que marcará un presedente en su historial de git, el comando es: `git commit -m "esta commit lleva mi index.html, mi style.css y mi javascript.js`.
+Una vez en el area de preparación podrán realizar el *commit* con su mensaje ` -m ` respectivo del hito que marcará un presedente en su historial de git.
+Por ejemplo: `git commit -m "esta commit lleva mi index.html, mi style.css y mi javascript.js`.
 
-Tienen que comprender que cada commit que realicen llevará una referencia de qué contenido es el que se esta trabajando.
+Tienen que comprender que cada commit que se realice debe llevar una referencia de ¿qué contenido es el que se esta trabajando?.
 
 A continuación les dejo una secuencia de líneas de código para que ejecuten ustedes mismos:
 
@@ -52,24 +53,28 @@ Utilizamos el siguiente comando
 ```
 	git diff
 ```
-Si queremos ser más detallados utilizamos el comando:
+Si queremos tener más detalle utilizamos el comando:
 
 ```
 	git diff --cached
 ```
-Podemos ver la diferencia entre dos **commit** especificos utilizando
+Tambien podemos ver las diferencias entre dos **commit** especificos utilizando:
 
 ```
 	git diff id-commit-1 id-commit-2
 ```
-Esto nos mostrará en rojo lo eliminado y en verde lo agregado.
-Es importante tener conocimiento de los ID o HASH para ir comparando el trabajo realizado.
+Este comando nos mostrará en color rojo lo eliminado y en color verde lo agregado.
+Es importante tener conocimiento de los ID o HASH para ir comparando las diferencias entre commits.
 
-Para ver los id o hash utilicen el comando `git log --decorate --oneline` ahondaremos más en este comando más adelante.
+Para ver los id o hash utilicen el comando `git log --decorate --oneline`.
+
+En el apartado de Logs explicare mejor esta linea de comando.
 
 
 ### Creando el .gitignore
-En este paso únicamente tienes que crear el archivo directamente desde sublime o su editor favorito el archivo **.gitignore** dentro del archivo escribe el nombre de su archivo a ignorar... por ejemplo:
+En este paso únicamente tienes que crear un archivo .gitignore dentro de tu carpeta de poryecto, esto lo puedes crear directamente en tu editor favorito, en mi caso sublime text 3.
+
+Un ejemplo de archivos a ignorar:
 
 ```
 	mi-archivo-javascript.js
@@ -80,18 +85,19 @@ En este paso únicamente tienes que crear el archivo directamente desde sublime 
 Si utilizamos `git status` veremos que los archivos ignorados no aparecen.  :grin:
 ### Atajos
 
-Si queremos agregar todos los archivos independiente de cual sea a la zona de **preparacion** utilizamos:
+Si queremos agregar todos los archivos independiente de cual sea a la zona de **preparacion** utilizamos el siguiente comando:
 
 ```	
 	git add .
 ```
-Si no queremos agregar los archivos uno a uno podemos agregar al area de **preparación** solo los archivos que tenemos bajo seguimiento con: 
+Si queremos agregar los archivos que tenemos en seguimiento al area de **preparación** utilizamos el siguiente comando:
 
 ```
 	git add -A
 ``` 
-Se agregaran todos los archivos que tengamos en seguimiento.
-Cuando utilizamos el comando `git add nombre-archivo` es cuando damos seguimiento de un archivo con git.
+Se agregaran solo los archivos que tengamos en seguimiento.
+
+**Cuando utilizamos el comando `git add nombre-archivo` es cuando damos seguimiento de un archivo con git.**
 
 Otro atajo rápido sería usar:
 
@@ -99,6 +105,7 @@ Otro atajo rápido sería usar:
 	`git commit -am "commit saltando la zona de preparacion"
 	 git log --decorate --oneline
 ```
+Este comando lo utilizaremos cuando hayamos modificado un commit.
 
 ### Log personalizados
 
@@ -112,16 +119,16 @@ Otro atajo rápido sería usar:
 
 	git log -n
 ``` 
-donde la **n** determinara la cantidad de commits que quieres ver
+donde la **n** determinará la cantidad de commits que quieres ver.
 
 Los before y after los podemos utilizar anidados para dar un rango especifico de tiempo.
 
 
 ### Deshacer cambios
 
-En este apartado dejaré algunos comandos que nos sirven para deshacer los cambios realizos en los commit
+En este apartado dejaré algunos comandos que sirven para deshacer los cambios realizados en los commit.
 
-Si por X motivo realizamos un commit y no agregamos todo lo que debíamos o queremos agregarle alguna modificación que pertenecerá al mismo commit podemos utilizar el siguiente comando para reemplazar el último commit por el que si querías realizar :wink: 
+Si por X motivo realizamos un commit y no agregamos todo lo que debíamos o queremos agregarle alguna modificación que pertenecerá al mismo commit podemos utilizar el siguiente comando para reemplazar el último commit por el que sí querías realizar :wink: 
 
 ```
 	git commit --amend
@@ -129,7 +136,7 @@ Si por X motivo realizamos un commit y no agregamos todo lo que debíamos o quer
 
 Esto abrira el editor que tengas para modificar el commit con los archivos que fueron cambiados y los que estan en el area de preparación.
 
-Para sacar un archivo de la zona de **preparación** utilizamos el comando
+Para sacar un archivo de la zona de **preparación** utilizamos el comando:
 
 ```
 	git reset HEAD nombre-del-archivo
@@ -137,17 +144,17 @@ Para sacar un archivo de la zona de **preparación** utilizamos el comando
 ### Etiquetas !important buenas practicas y versionado de tu proyecto.
 Podemos listar las etiquetas que ya existen con:
 
-
 `	git tag`
 
-Creamos nuestra primera etiqueta, esta etiqueta se le agregará al **commit** mas reciente
+Crearemos nuestra primera etiqueta, esta etiqueta se le agregará al **commit** mas reciente:
 	
 ```
 	git tag etiqueta-nueva
 	git log --decorate
 
 ```
-Etiqueta anotada **-a**, se guardan en la bd de git como un objeto más completo que la etiqueta normal. Contiene el nombre del etiquetador, correo, fecha y tienen un **mensaje con -m**.
+La etiqueta anotada **-a** guardará en la base de datos de git todo como un objeto (más completo que la etiqueta normal), que contiene el nombre del etiquetador, correo, fecha y tienen un **mensaje con -m**.
+
 ```
 	git tag -a v1.0 -m "version 1.0 estable"
 	git tag
@@ -155,20 +162,22 @@ Etiqueta anotada **-a**, se guardan en la bd de git como un objeto más completo
 	git show v1.0
 	git show etiqueta-nueva
 ```
-Si queremos versionar commit antiguos debemos copiar el hash pertinente y pegar el hash a continuación... por ejemplo:
+Si quisieramos versionar algún commit antiguo debemos copiar el hash pertinente del commit y pegar el hash a continuación.
+
+Por ejemplo:
 
 ```
 	git tag etiqueta-normal hash-copiado
 	git tag -a v0.1 -m "version primaria basica" hash-copiado
 ```
-Cuando utilizamos un tag podremos ver todo el trabajo hasta esa etiqueta más no los que pertenecen despues de la etiqueta.
+Al utilizamos tag's podremos ver todo el trabajo hasta ese tag excluyendo todos sus commits sucesores.
 
 ```
 	git checkout mi-etiqueta
 	git log --decorate --oneline
-	git log --decorate --oneline --all y veremos los commits superiores al presente.
+	git log --decorate --oneline --all con esto vemos los commits superiores al presente **all**.
 ```
-Para eliminar tags de nuestros commit lo hacemos con el siguiente comando:
+Para eliminar tags de algún commit utilizamos el siguiente comando:
 
 ```
 	git tag --list
@@ -176,13 +185,16 @@ Para eliminar tags de nuestros commit lo hacemos con el siguiente comando:
 ```
 
 ### Clonar repositorios
-Para clonar sacamos la URL del repositorio a clonar y utilizamos el siguiente comando:
+Para clonar algún repositorio copiamos la URL y utilizamos el siguiente comando:
 
 ```
 	git clone url-del-repo
 ```
-Esto nos crea una nueva carpeta con el nombre del repo y todos sus archivos.
-Si queremos dar nosotros el nombre a la carpeta utilizamos el mismo comando con el nombre que le indiquemos... ejemplo:
+Este comando nos crea una nueva carpeta con el nombre del repositorio y todos sus archivos.
+
+Si queremos asignarle un nombre particular a la carpeta utilizamos el mismo comando con el nombre pertinente
+
+Por ejemplo:
 
 ```	
 	git clone url-del-repo nombre-carpeta
@@ -190,7 +202,7 @@ Si queremos dar nosotros el nombre a la carpeta utilizamos el mismo comando con 
 
 ### Ramas en GIT
 
- Para crear una rama en git utilizamos el siguiente comando
+ Para crear una rama en git utilizamos el siguiente comando:
 
  `	git branch nombre-rama`
 
@@ -204,19 +216,20 @@ Si queremos dar nosotros el nombre a la carpeta utilizamos el mismo comando con 
 
  `	git log --decorate --oneline --all --graph`
 
- El **HEAD** estará apuntando a la **rama** creada. Ahora tenemos que tener especial atención ya que si seguimos creando commits estaremos en la **rama** creada o mejor dicho en `Un mundo paralelo` :scream:
+ El **HEAD** estará apuntando a la **rama** creada. Ahora tenemos que tener especial atención ya que si seguimos creando commits estaremos en la **rama** creada o mejor dicho en `Un mundo paralelo`. :scream:
 
-Para regresar el apuntador a la rama master utilizamos el mismo comando de `git checkout master`. Si creamos un commit en el universo paralelo y retrocedemos a donde dejamos el **master** y realizamos un nuevo commit estos se irán por mundos diferentes... piensa en la rama de un arbol que le salga una más pequeña, son de la misma rama pero crecerán por separado.
+Para regresar el apuntador a la rama master utilizamos el comando `git checkout master`. Si creamos un commit en el universo paralelo y retrocedemos a donde dejamos el **master** y realizamos un nuevo commit estos se irán por mundos diferentes, piensa en la rama de un arbol y que a esta le salga una rama más pequeña, son de la misma rama pero crecerán por separado.
 
-Para saber en que commit o en que universo estas utiliza el comando `git branch`
-
+Para saber en que commit o en que universo nos ubicamos utiliza el comando `git branch`.
 ```
 	git log --decorate --all --graph
 ```
 
-### Fusionar una ***rama*** con la linea principal del proyecto
+### Fusionar una ***rama*** con la línea principal del proyecto
 
-Para fusionar utilizamos el log para ver las lineas de las ramificaciones y fusionar las que tengan mas interdependencia, la más cercana para ir dando coherencia. Para fusionar una rama nos ubicamos en la rama principal a la que queramos agregarle la otra... por ejemplo:
+Para fusionar las ramas debemos utilizar el log para ver las lineas de las ramificaciones y fusionar las que tengan mas interdependencia entre ellas, en este caso la más cercana para ir dando coherencia. Para fusionar una rama nos ubicamos en la rama principal a la que queramos agregarle la otra.
+
+Por ejemplo:
 
 ```
 	git merge nombre-rama
@@ -228,7 +241,7 @@ Una vez fusionada la rama podemos eliminar el apuntador de la rama que ya no uti
 ```
 Los commit no se eliminan solo se elimina el apuntador a la **rama**
 
-Para ver que ramos no han sido fusionadas y cuales si fusionamos, utilizamos los siguientes comando correspondientemente:
+Para ver que ramos no han sido fusionadas y cuales si fusionamos utilizaremos los siguientes comando respectivamente:
 
 ```
 	git branch --no-merged
