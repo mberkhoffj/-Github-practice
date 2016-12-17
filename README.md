@@ -72,7 +72,7 @@ En el apartado de Logs explicare mejor esta linea de comando.
 
 
 ### Creando el .gitignore
-En este paso únicamente tienes que crear un archivo .gitignore dentro de tu carpeta de poryecto, esto lo puedes crear directamente en tu editor favorito, en mi caso sublime text 3.
+En este paso únicamente tienen que crear un archivo .gitignore dentro de tu carpeta de poryecto, esto lo puedes crear directamente en tu editor favorito, en mi caso sublime text 3.
 
 Un ejemplo de archivos a ignorar:
 
