@@ -2,7 +2,7 @@
 
 Cosas que debes tener en cuenta desde ya **HEAD** es tu presente.
 
-### Creación de repositorio gratis en la web [github.com](https:/github.com "click ") 
+### Creación de repositorio gratis en la web **[github.com](https:/github.com "click ")** 
 
 Ingresando al Link podrás crearte una cuenta de manera gratuita para usarla debes confirmar tu correo como en cualquier típica página.
 Al momento de crear un repositorio nuevo tenemos que tener dos cosas presentes que son de gran importancia para utilizarlas luego en nuestra consola y trabajar de manera remota con git.
@@ -19,7 +19,7 @@ La segunda es ejecutar a continuación de la configuración de git por consola l
 
 ### Configurando GIT por primera vez
 
-Si como yo estás en window te recomiendo instalar git bash una consola que reconoce los comandos de linux y te permitirá trabajar de manera cómoda con git. [descargar](https://git-scm.com/download/win "click ")
+Si como yo estás en window te recomiendo instalar git bash una consola que reconoce los comandos de linux y te permitirá trabajar de manera cómoda con git. **[descargar](https://git-scm.com/download/win "click ")**
 
 Primer paso será configurar git en la consola utilizando los siguientes comandos:
 
