@@ -4,10 +4,9 @@ Cosas que debes tener en cuenta desde ya **HEAD** es tu presente.
 
 ### Creación de repositorio gratis en la web **[github.com](https:/github.com "click ")** 
 
-Ingresando al Link podrás crearte una cuenta de manera gratuita, para usarla debes confirmar tu correo como en cualquier típica página.
-Al momento de crear un repositorio nuevo tenemos que tener presentes dos cosas que son de gran importancia y que debemos utilizar en nuestra consola al momento de querer trabajar de manera remota con git.
+Ingresando al Link podrás crear una nueva cuenta de manera gratuita, para esto sólo debes loguearte con tu correo electrónico. Al momento de generar un nuevo repositorio debes tener presente dos cosas que son de gran importancia, estas se utilizarán por medio de la consola al momento de trabajar de forma remota con git:
 
-Lo Primero es crear un repositorio y **NO** marcar la opción de `agregar el README.md` (este lo creamos nosotros para hacer la presentación del contenido).
+Lo Primero es crear un nuevo repositorio y **NO** marcar la opción de `agregar el README.md` (este lo creamos nosotros para hacer la presentación del contenido).
 
 Lo segundo es ejecutar (continuación de la configuración de git por consola) las siguiente lineas de comandos:
 
@@ -19,7 +18,7 @@ Lo segundo es ejecutar (continuación de la configuración de git por consola) l
 
 ### Configurando GIT por primera vez
 
-Si como yo estás en window te recomiendo instalar git bash que es una consola que reconoce comandos de linux y te permite trabajar de manera cómoda git. **[descargar](https://git-scm.com/download/win "click ")**
+Si tienes windows te recomiendo instalar git bash que es una consola que reconoce comandos de linux y te permitirá trabajar de manera cómoda con git. **[descargar](https://git-scm.com/download/win "click ")**
 
 El primer paso será configurar git en la consola `git bash` utilizando los siguientes comandos:
 
@@ -32,12 +31,12 @@ git config --list
 ```
 ### De la zona de trabajo al area de preparación
 
-En Git tenemos un ciclo de trabajo (no detallaré mucho en esto). Lo primero es que Git debe estar al tanto de qué archivo estamos trabajando, tienen que agregarlo al area de preparación con: `git add nombre-del-archivo` (más adelante ahondaremos en las diferentes maneras de trabajar esta linea de comandos)
+En Git tenemos un ciclo de trabajo (no detallaré mucho en esto). Lo primero es que Git debe estar al tanto de a qué archivo les damos seguimiento, estos se deben agregar al area de preparación con: `git add nombre-del-archivo` (más adelante ahondaremos en las diferentes maneras de trabajar esta linea de comandos)
 
-Una vez en el area de preparación podrán realizar el *commit* con su mensaje ` -m ` respectivo del hito que marcará un presedente en su historial de git.
+Una vez en el area de preparación se podrán realizar el *commit* con su mensaje ` -m ` respectivo del hito que marcará un presedente en su historial de git.
 Por ejemplo: `git commit -m "esta commit lleva mi index.html, mi style.css y mi javascript.js`.
 
-Tienen que comprender que cada commit que se realice debe llevar una referencia de ¿qué contenido es el que se esta trabajando?.
+Es importante mencionar que cada commit que se realice debe llevar una referencia de ¿qué contenido es el que se esta trabajando?.
 
 A continuación les dejo una secuencia de líneas de código para que ejecuten ustedes mismos:
 
@@ -216,9 +215,9 @@ Por ejemplo:
 
  `	git log --decorate --oneline --all --graph`
 
- El **HEAD** estará apuntando a la **rama** creada. Ahora tenemos que tener especial atención ya que si seguimos creando commits estaremos en la **rama** creada o mejor dicho en `Un mundo paralelo`. :scream:
+ El **HEAD** estará apuntando a la **rama** creada. Desde ahi debemos tener especial cuidado porque si seguimos creando commits estaremos en la **rama** creada o mejor dicho en `Un mundo paralelo`. :scream:
 
-Para regresar el apuntador a la rama master utilizamos el comando `git checkout master`. Si creamos un commit en el universo paralelo y retrocedemos a donde dejamos el **master** y realizamos un nuevo commit estos se irán por mundos diferentes, piensa en la rama de un arbol y que a esta le salga una rama más pequeña, son de la misma rama pero crecerán por separado.
+Para apuntar nuevamente a la rama master utilizamos el comando `git checkout master`. Si creamos un commit en el universo paralelo y retrocedemos a donde dejamos el **master** y realizamos un nuevo commit estos se irán por mundos diferentes, piensa en la rama de un arbol y que a esta le salga una rama más pequeña, son de la misma rama pero crecerán por separado.
 
 Para saber en que commit o en que universo nos ubicamos utiliza el comando `git branch`.
 ```
