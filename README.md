@@ -247,7 +247,33 @@ Para ver que ramos no han sido fusionadas y cuales si fusionamos utilizaremos lo
 	git branch --merged
 ```
 
-### Github
+### Github agregando repositorios remotos
 
+Para ver los repositorios remotos que tenemos enlazados utilizamos el comando:
+
+```
+	git remote -v
+```
+
+Podemos renombrar los repositorios remotos con el comando:
+
+```
+	git remote rename "nombre-viejo-repositorio" "nombre-nuevo"
+```
+
+Agregando un repositorio remoto:
+
+Primero copiamos la url del respositorio y utilizamos la siguiente linea de comandos:
+
+```
+	git remote add nombre-repositorio url-repositorio
+
+```
+
+La primera vez que hagamos un push a un directorio remoto desde el local tenemos que utilizar el siguiente comando:
+
+```
+	 git push -u nombre-repositorio rama-que-queremos-subir
+```
 
 
