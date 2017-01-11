@@ -1,4 +1,4 @@
-# GitHub 
+# GitHub AA
 
 Cosas que debes tener en cuenta desde ya **HEAD** es tu presente.
 
@@ -275,5 +275,14 @@ La primera vez que hagamos un push a un directorio remoto desde el local tenemos
 ```
 	 git push -u nombre-repositorio rama-que-queremos-subir
 ```
+
+Para eliminar un repositorio remoto configurado utilizamos el siguiente comando:
+
+```
+	git remote remove nombre-repositorio
+	git remote -v
+```
+
+
 
 
