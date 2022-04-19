@@ -45,6 +45,10 @@ git status
 git add "nombre-archivo"
 git status
 git commit -m "nombre del commit"
+----------
+shorthand
+agregar todo al estado de preparacion:
+git add .
 ```
 ### Ver diferencias entre los archivos en el area de preparación con el area de trabajo
 Utilizamos el siguiente comando
